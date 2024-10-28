@@ -177,7 +177,7 @@ window.closeMobileMenu = () => {
 
 // Typing effect
 var i = 0;
-var txt = 'Hello, I am Acrisoul';
+var txt = 'Hello, I am Awestin';
 
 function typeWriter() {
   if (i < txt.length) {

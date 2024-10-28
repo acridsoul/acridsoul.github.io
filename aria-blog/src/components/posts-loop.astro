@@ -4,12 +4,23 @@ const allPosts = await getCollection("post");
 
 const { count } = Astro.props;
 
-const postsLoop = allPosts.slice(0, count).map((post) => {
-	return {
-		...(post.data || {}),
-		link: `/post/${post.slug}`,
-	};
+// Sort posts by date, newest first
+const sortedPosts = allPosts.sort((a, b) => {
+  const dateA = new Date(a.data.date as string);  // Accessing date
+  const dateB = new Date(b.data.date as string);  // Accessing date
+  return dateB.getTime() - dateA.getTime(); // Compare timestamps
 });
+
+// Limit the number of displayed posts based on `count`
+const postsLoop = sortedPosts.slice(0, count).map((post) => {
+  return {
+    ...(post.data || {}),
+    link: `/post/${post.slug}`,
+  };
+});
+
+
+
 ---
 
 {

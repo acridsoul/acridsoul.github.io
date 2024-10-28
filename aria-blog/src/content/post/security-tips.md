@@ -1,8 +1,9 @@
 ---
 layout: ../../layouts/post.astro
-title: Browser locally uses AI to remove image backgrounds
-description: Browser locally uses AI to remove image backgrounds
-dateFormatted: Jul 14th, 2024
+title: "Security tips for staying safe on the web"
+description: "Your top priority should be staying safe online"
+date: "2024-10-28"  # Format as YYYY-MM-DD
+dateFormatted: Oct 28th, 2024
 ---
 
 Yo, so I've been digging into this whole AI thing for front-end development lately, and stumbled upon this cool Transformers.js example.  Turned it into a sweet little tool, check it out!

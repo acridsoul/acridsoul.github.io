@@ -2,6 +2,7 @@
 layout: ../../layouts/post.astro
 title: Aria - a minimalist Astro homepage template
 description: Aria is a template for Astro
+date: "2024-06-06"  # Format as YYYY-MM-DD
 dateFormatted: Jun 6th, 2024
 ---
 

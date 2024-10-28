@@ -2,7 +2,8 @@
 layout: ../../layouts/post.astro
 title: Using Vercel Edge to Process Images
 description: Using Vercel Edge to Process Images
-dateFormatted: Dec 17th, 2023
+date: "2024-12-17"  # Format as YYYY-MM-DD
+dateFormatted: Dec 17th, 2024
 ---
 
 Previously, I shared an article on [using Cloudflare Worker to process images](https://dev.to/ccbikai/shi-yong-cloudflare-worker-chu-li-tu-pian-38dl-temp-slug-7437591). However, due to the limitations of the free version of Worker, which only allows for 10ms of CPU usage, there were frequent resource overages and high failure rates. Today, I had some free time, so I decided to try using Vercel Edge instead and share my findings with those who are interested.

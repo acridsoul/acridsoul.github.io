@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Assignment-Checker",
+		"description": "Project to check Assignments and Cats.",
+		"image": "/assets/images/projects/assignment.jpg",
+		"url": "https://github.com/acridsoul/Selenium-Projects/tree/main/1.assignment-checker-mku"
+	},
+	{
+		"name": "Clear Mark",
+		"description": "Documentary Area Watermark Eraser",
+		"image": "/assets/images/projects/watermark.jpg",
+		"url": "https://github.com/acridsoul/Clear-Mark"
+	},
+	{
+		"name": "VirusTotal-Flask",
+		"description": "My Own Malware Checker",
+		"image": "/assets/images/projects/vt-client.jpg",
+		"url": "https://github.com/acridsoul/virustotal-flask"
+	}
+]

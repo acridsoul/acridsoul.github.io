@@ -1,0 +1,66 @@
+---
+import Button from "../components/button.astro";
+import Projects from "../components/home/projects.astro";
+import Separator from "../components/home/separator.astro";
+import Writings from "../components/home/writings.astro";
+import Layout from "../layouts/main.astro";
+import TechSkills from "../components/TechSkills";
+---
+
+<Layout title="Acrid">
+  <div
+    class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
+  >
+    <div class="flex flex-col items-center md:flex-row">
+      <div class="relative w-full md:w-1/2">
+        <h1
+          class=" font-custom mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
+          id="acrisoul"
+        >
+        </h1>
+        <div class="flex items-center mb-1">
+          <i class="fas  fa-user-secret text-neutral-600 dark:text-neutral-400 mr-2"></i> <!-- Font Awesome icon -->
+          <p class=" font-custom text-base text-neutral-600 dark:text-neutral-400">
+            Cybersecurity Nerd Who also loves the world of Infosec.
+          </p>
+        </div>   
+        <div class="flex items-center mb-1">
+          <i class="fas fa-shield-alt text-neutral-600 dark:text-neutral-400 mr-2"></i> <!-- Font Awesome icon -->
+          <p class="font-custom text-base text-neutral-600 dark:text-neutral-400">
+             Computer Science student at MKU
+          </p>
+        </div>  
+        <div class="flex items-center mb-7">
+          <i class="fas fa-shield-alt text-neutral-600 dark:text-neutral-400 mr-2"></i> <!-- Font Awesome icon -->
+          <p class="font-custom text-base text-neutral-600 dark:text-neutral-400">
+            Reading books is cool I guess
+          </p>
+        </div>  
+        <h2 class="text-2xl font-semibold font-custom text-white">Time in Nairobi, Kenya</h2>
+        <div id="digital-clock" class=" font-two text-[#17D4FE] text-2xl sm:text-3xl md:text-[35px] tracking-wide font-medium mt-[-5px]">
+        </div>
+
+        <main class="container mx-auto px-4">
+          <TechSkills client:load />
+        </main>
+
+        <Button text="Follow me on 𝕏" link="https://x.com/acrisoul" />
+      </div>
+      <div
+        class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
+      >
+        <div class="relative z-50 w-full">
+          <div
+            class="absolute bottom-0 z-40 w-16 h-16 -translate-x-6 -translate-y-1/2 lg:top-auto top-0 lg:-translate-y-[330px] rounded-full"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Separator text="Check out my projects" />
+  <Projects />
+  <Separator text="Some of my writing" />
+  <Writings />
+</Layout>

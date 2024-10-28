@@ -4,7 +4,8 @@ import {
   SiReact,
   SiNodedotjs,
   SiTailwindcss,
-  SiTypescript
+  SiTypescript,
+  SiAstro
 } from '@icons-pack/react-simple-icons';
 
 const TechSkills = () => {
@@ -14,11 +15,12 @@ const TechSkills = () => {
     { name: 'Node.js', icon: SiNodedotjs, color: 'text-[#339933]' },
     { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-[#06B6D4]' },
     { name: 'TypeScript', icon: SiTypescript, color: 'text-[#3178C6]' },
+    { name: 'Astro', icon: SiAstro, color: 'text-[#3178C6]' },
   ];
 
   return (
     <div>
-      <p className="mb-1 mt-4 font-semibold text-neutral-800 dark:text-neutral-200">
+      <p className="text-3xl font-custom mb-1 mt-4 font-semibold text-neutral-800 dark:text-neutral-200">
         Technologies I Use:
       </p>
       <ul className="py-2 space-y-2">
@@ -30,7 +32,7 @@ const TechSkills = () => {
               className="flex items-center gap-2 text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors duration-200"
             >
               <Icon 
-                className={`w-5 h-5 ${skill.color} transition-transform duration-200 hover:scale-110`} 
+                className={`w-7 h-7 ${skill.color} transition-transform duration-200 hover:scale-110`} 
                 title={skill.name}
               />
               <span className="text-sm">{skill.name}</span>

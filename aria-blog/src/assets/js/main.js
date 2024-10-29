@@ -206,3 +206,52 @@ function myClock() {
   const date = new Date();
   document.getElementById("digital-clock").textContent = date.toLocaleTimeString();
 }
+
+// js for the os info
+
+function getOSInfo() {
+	var userAgent = window.navigator.userAgent;
+	var os = "Unknown";
+
+	if (userAgent.indexOf('Win') !== -1) {
+		os = 'Windows';
+	} else if (userAgent.indexOf('Mac') !== -1) {
+		os = 'MacOS';
+	} else if (userAgent.indexOf('Linux') !== -1) {
+		os = 'Linux';
+	} else if (userAgent.indexOf('Android') !== -1) {
+		os = 'Android';
+	} else if (userAgent.indexOf('like Mac') !== -1) {
+		os = 'iOS';
+	}
+
+	return os;
+}
+
+function getBrowserName() {
+	var userAgent = navigator.userAgent;
+	var browserName = "Unknown";
+
+	if (userAgent.indexOf("Firefox") > -1) {
+		browserName = "Mozilla Firefox";
+	} else if (userAgent.indexOf("SamsungBrowser") > -1) {
+		browserName = "Samsung Internet";
+	} else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+		browserName = "Opera";
+	} else if (userAgent.indexOf("Trident") > -1) {
+		browserName = "Microsoft Internet Explorer";
+	} else if (userAgent.indexOf("Edg") > -1) {
+		browserName = "Microsoft Edge";
+	} else if (userAgent.indexOf("Chrome") > -1) {
+		browserName = "Google Chrome";
+	} else if (userAgent.indexOf("Safari") > -1) {
+		browserName = "Apple Safari";
+	}
+
+	return browserName;
+}
+
+document.getElementById('os-info').innerText = 'Your Operating System: ' + getOSInfo();
+document.getElementById('browser-info').innerText = 'Browser Name: ' + getBrowserName();
+document.getElementById('platform').innerText = 'Platform: ' + getOSInfo(); // Using getOSInfo() instead of navigator.platform
+document.getElementById('language').innerText = 'Language: ' + navigator.language;

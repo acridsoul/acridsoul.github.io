@@ -1,4 +1,10 @@
-// Add your javascript here
+import { bubbleCursor, fairyDustCursor, ghostCursor } from "cursor-effects";
+
+// Initialize the ghost cursor effect for the whole page
+window.addEventListener("load", () => {
+    new fairyDustCursor(); // No element parameter, applies to the whole body
+});
+
 
 window.darkMode = false;
 

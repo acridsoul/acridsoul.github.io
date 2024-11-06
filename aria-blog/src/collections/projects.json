@@ -16,5 +16,12 @@
 		"description": "My Own Malware Checker",
 		"image": "/assets/images/projects/vt-client.jpg",
 		"url": "https://github.com/acridsoul/virustotal-flask"
+	},
+	{
+		"name": "Apex Legends Menu",
+		"description": "Apex Legends character selection page",
+		"image": "/assets/images/projects/legends.jpg",
+		"url": "https://apex-legends-selection.vercel.app/"
 	}
+
 ]

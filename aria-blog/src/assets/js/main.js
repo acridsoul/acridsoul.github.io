@@ -255,3 +255,15 @@ document.getElementById('os-info').innerText = 'Your Operating System: ' + getOS
 document.getElementById('browser-info').innerText = 'Browser Name: ' + getBrowserName();
 document.getElementById('platform').innerText = 'Platform: ' + getOSInfo(); // Using getOSInfo() instead of navigator.platform
 document.getElementById('language').innerText = 'Language: ' + navigator.language;
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("chatbot-icon").addEventListener("click", toggleChatbot);
+    document.getElementById("close-btn").addEventListener("click", toggleChatbot);
+});
+
+function toggleChatbot() {
+    const chatbotContainer = document.getElementById("chatbot-container");
+    chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "block" : "none";
+    console.log('Chatbot toggled');
+}

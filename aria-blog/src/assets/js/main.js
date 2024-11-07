@@ -1,4 +1,5 @@
 import { bubbleCursor, fairyDustCursor, ghostCursor } from "cursor-effects";
+import gsap from 'gsap';
 
 // Initialize the ghost cursor effect for the whole page
 window.addEventListener("load", () => {
@@ -255,6 +256,12 @@ document.getElementById('os-info').innerText = 'Your Operating System: ' + getOS
 document.getElementById('browser-info').innerText = 'Browser Name: ' + getBrowserName();
 document.getElementById('platform').innerText = 'Platform: ' + getOSInfo(); // Using getOSInfo() instead of navigator.platform
 document.getElementById('language').innerText = 'Language: ' + navigator.language;
+
+document.addEventListener("DOMContentLoaded", () => {
+	const tl = gsap.timeline();
+	tl.from("#info-container", { y: 50, opacity: 0, duration: 0.8, ease: "power2.out" })
+	  .from("#info-container p", { y: 20, opacity: 0, duration: 0.5, stagger: 0.2 }, "-=0.5");
+  });
 
 
 document.addEventListener("DOMContentLoaded", () => {

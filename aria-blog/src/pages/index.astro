@@ -6,6 +6,7 @@ import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
 import TechSkills from "../components/TechSkills";
 import Chatbot from "@/components/chatbot.astro";
+
 ---
 
 <Layout title="Acrid">
@@ -40,12 +41,12 @@ import Chatbot from "@/components/chatbot.astro";
           Reading books is cool I guess
         </p>
       </div>  
-      <div class="p-8 w-80 text-center text-neutral-600 dark:text-neutral-400 font-custom">
-        <p id="os-info" class="mb-2"></p>
-        <p id="browser-info" class="mb-2"></p>
-        <p id="platform" class="mb-2"></p>
-        <p id="language" class="mb-2"></p>
-    </div>
+        <div id="info-container" class="p-8 w-80 text-center text-neutral-600 dark:text-neutral-400 font-custom">
+          <p id="os-info" class="mb-2">Operating System Info</p>
+          <p id="browser-info" class="mb-2">Browser Info</p>
+          <p id="platform" class="mb-2">Platform</p>
+          <p id="language" class="mb-2">Language</p>
+        </div>
     </div>
   
     <!-- Right Side - Time and Tech Skills -->

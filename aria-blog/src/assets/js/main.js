@@ -174,6 +174,7 @@ window.openMobileMenu = () => {
 	}, 1);
 };
 
+
 window.closeMobileMenu = () => {
 	document.getElementById("closeMenu").classList.add("hidden");
 	document.getElementById("openMenu").classList.remove("hidden");

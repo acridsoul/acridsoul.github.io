@@ -22,6 +22,11 @@
 		"description": "Apex Legends character selection page",
 		"image": "/assets/images/projects/legends.jpg",
 		"url": "https://apex-legends-selection.vercel.app/"
+	},
+	{
+		"name": "Youtube LiveStream Chat Viewer",
+		"description": "Dashboard to view livestream chats ",
+		"image": "/assets/images/projects/yt.jpg",
+		"url": "https://github.com/acridsoul/yt-live-chat-dashboard"
 	}
-
 ]

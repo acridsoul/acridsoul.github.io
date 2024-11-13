@@ -128,3 +128,38 @@ html.dark #darkToggle:hover .horizon {
   font-size: 18px;
   cursor: pointer;
 }
+
+
+
+/* Container for spacing between eyes */
+.eyes-container {
+  display: flex;
+  gap: 15px; /* Adjust the spacing between the eyes */
+  }
+  
+  /* Eye and Pupil Styling */
+  .eye {
+  width: 40px; /* Smaller eye size */
+  height: 40px;
+  background-color: #fff;
+  border: 3px solid #333;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: blink 5s infinite;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  }
+  
+  .pupil {
+  width: 12px; /* Adjusted pupil size */
+  height: 12px;
+  background-color: #333; /* Darker pupil for better contrast */
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.08s ease; /* Smoother transition for natural movement */
+  }
+  
+  
+  

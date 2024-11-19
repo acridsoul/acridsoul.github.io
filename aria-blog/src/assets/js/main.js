@@ -295,13 +295,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("chatbot-icon").addEventListener("click", toggleChatbot);
-    document.getElementById("close-btn").addEventListener("click", toggleChatbot);
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     document.getElementById("chatbot-icon").addEventListener("click", toggleChatbot);
+//     document.getElementById("close-btn").addEventListener("click", toggleChatbot);
+// });
 
-function toggleChatbot() {
-    const chatbotContainer = document.getElementById("chatbot-container");
-    chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "block" : "none";
-    console.log('Chatbot toggled');
-}
+// function toggleChatbot() {
+//     const chatbotContainer = document.getElementById("chatbot-container");
+//     chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "block" : "none";
+//     console.log('Chatbot toggled');
+// }

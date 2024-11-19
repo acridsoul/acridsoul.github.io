@@ -1,8 +1,27 @@
-<div id="chatbot-container">
-  <div id="chatbot-messages"></div>
-  <input id="chatbot-input" type="text" placeholder="Ask me anything!" />
-  <button id="chatbot-send">Send</button>
-</div>
-<style>
-  /* Add basic styling here */
-</style>
+---
+// src/components/ChatBot.astro
+---
+
+<div class="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg w-80">
+    <div class="p-4 bg-gray-800 text-white rounded-t-lg">
+      <h2 class="text-lg font-bold">Otibot</h2>
+    </div>
+    <div id="chatbot-messages" class="p-4 h-64 overflow-y-auto bg-gray-100">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="flex items-center p-4 bg-gray-200 rounded-b-lg">
+      <input
+        id="chatbot-input"
+        type="text"
+        placeholder="Ask me anything!"
+        class="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+      />
+      <button
+        id="chatbot-send"
+        class="ml-2 px-4 py-2 text-sm text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring focus:ring-blue-300 focus:outline-none"
+      >
+        Send
+      </button>
+    </div>
+  </div>
+  

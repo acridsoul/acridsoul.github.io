@@ -205,11 +205,17 @@ window.closeMobileMenu = () => {
 
 
 // js for the clock
-setInterval(myClock, 0);
-function myClock() {
-  const date = new Date();
-  document.getElementById("digital-clock").textContent = date.toLocaleTimeString();
-}
+document.addEventListener("DOMContentLoaded", () => {
+	setInterval(myClock, 1000); // Update every second
+	function myClock() {
+	  const date = new Date();
+	  const clockElement = document.getElementById("digital-clock");
+	  if (clockElement) {
+		clockElement.textContent = date.toLocaleTimeString();
+	  }
+	}
+  });
+  
 
 // js for the os info
 

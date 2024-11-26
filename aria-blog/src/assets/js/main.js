@@ -273,41 +273,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+// js for custom cursor
 
+const customCursor = document.querySelector('.custom-cursor');
 
+const moveCursor = (e) => {
+    const mouseY = e.clientY;
+    const mouseX = e.clientX;
 
+    customCursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     document.getElementById("chatbot-icon").addEventListener("click", toggleChatbot);
-//     document.getElementById("close-btn").addEventListener("click", toggleChatbot);
-// });
-
-// function toggleChatbot() {
-//     const chatbotContainer = document.getElementById("chatbot-container");
-//     chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "block" : "none";
-//     console.log('Chatbot toggled');
-// }
+window.addEventListener('mousemove', moveCursor);

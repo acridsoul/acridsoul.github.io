@@ -23,7 +23,7 @@ const currentPath = pathname.slice(1); // remove the first "/
     >
       <div
         id="openMenu"
-        class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden"
+        class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-none sm:hidden"
       >
         <svg
           class="w-8 h-8 dark:text-neutral-200"
@@ -37,7 +37,7 @@ const currentPath = pathname.slice(1); // remove the first "/
       </div>
       <div
         id="closeMenu"
-        class="flex flex-col items-end justify-center hidden w-6 h-6 ml-4 -translate-x-1 cursor-pointer sm:hidden"
+        class="flex flex-col items-end justify-center hidden w-6 h-6 ml-4 -translate-x-1 cursor-none sm:hidden"
       >
         <svg
           class="w-6 h-6 text-neutral-600 dark:text-neutral-200"
@@ -80,7 +80,7 @@ const currentPath = pathname.slice(1); // remove the first "/
       </div>
       <div
         id="darkToggle"
-        class="relative flex items-center pl-6 ml-4 font-medium tracking-wide cursor-pointer text-neutral-800 group dark:text-white"
+        class="relative flex items-center pl-6 ml-4 font-medium tracking-wide cursor-none text-neutral-800 group dark:text-white"
       >
         <div
           class="absolute left-0 flex items-center justify-center w-6 h-6 overflow-hidden border-b border-transparent horizon group-hover:border-neutral-600"

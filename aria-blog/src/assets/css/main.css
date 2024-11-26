@@ -118,18 +118,5 @@ html.dark #darkToggle:hover .horizon {
 /* custom cursor */
 
 html, body {
-  background-color: #1D1E22;
   cursor: none; /* Hide the default cursor */
-  }
-
-  .custom-cursor {
-      width: 32px; /* Adjust to the size of your GIF */
-      height: 32px;
-      background-image: url('/assets/images/cursors/cigar.gif');
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: fixed;
-      pointer-events: none; /* Prevent cursor from blocking interactions */
-      transform: translate(-50%, -50%);
-      z-index: 1000;
   }

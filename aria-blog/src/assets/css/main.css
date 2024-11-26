@@ -125,7 +125,7 @@ html, body {
   .custom-cursor {
       width: 32px; /* Adjust to the size of your GIF */
       height: 32px;
-      background-image: url('./assets/images/cursors/cigar.gif');
+      background-image: url('/assets/images/cursors/cigar.gif');
       background-size: contain;
       background-repeat: no-repeat;
       position: fixed;

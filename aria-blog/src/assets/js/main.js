@@ -1,12 +1,14 @@
-import { bubbleCursor, fairyDustCursor, ghostCursor } from "cursor-effects";
+import { bubbleCursor, fairyDustCursor, followingDotCursor } from "cursor-effects";
 import { TextPlugin } from 'gsap/TextPlugin';
 import gsap from 'gsap';
 gsap.registerPlugin(TextPlugin);
 
-// Initialize the ghost cursor effect for the whole page
-window.addEventListener("load", () => {
-    new fairyDustCursor(); // No element parameter, applies to the whole body
-});
+// // Initialize the ghost cursor effect for the whole page
+// window.addEventListener("load", () => {
+//     new followingDotCursor({
+// 		colors:["white","blue"]
+// 	}); // No element parameter, applies to the whole body
+// });
 
 
 window.darkMode = false;

@@ -115,8 +115,3 @@ html.dark #darkToggle:hover .horizon {
   }
   
   
-/* custom cursor */
-
-html, body {
-  cursor: none; /* Hide the default cursor */
-  }

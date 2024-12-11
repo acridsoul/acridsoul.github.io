@@ -65,3 +65,18 @@ dateFormatted: December 11th, 2024
     <img src="/assets/images/blogs/webstore.png" alt="webstore" width="99">
   </a>
 </div>
+
+## **5. Anori**
+
+- Tired of looking at the same old new tab page on your browser?🤢
+- Try This Cool Cutomizable New Tab Page 😃
+<img src="/assets/images/blogs/anori.png" alt="Behind The Overlay" width="350">
+- It is available on both chrome and firefox addons stores
+<div style="display: flex; gap: 10px; margin-top:-28px;">
+  <a href="https://addons.mozilla.org/en-GB/firefox/addon/anori/">
+    <img src="/assets/images/blogs/addon.jpg" alt="mozilla addon" width="79">
+  </a>
+  <a href="https://chromewebstore.google.com/detail/anori-productivity-new-ta/ddeaekifelikgnaacipabpmjpffgifek">
+    <img src="/assets/images/blogs/webstore.png" alt="chrome webstore" width="99">
+  </a>
+</div>

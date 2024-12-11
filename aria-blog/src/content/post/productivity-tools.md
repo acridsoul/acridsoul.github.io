@@ -5,8 +5,6 @@ description: "Tools that level up Your Productivity"
 date: "2024-12-11"  # Format as YYYY-MM-DD
 dateFormatted: December 11th, 2024
 ---
-<br>
-
 ## **1. Wappalyzer**
 - This is a tool that can find out the technology stack of any website in seconds !
 <img src="/assets/images/blogs/wappalyzer.png" alt="Wappalyzer" width="400">

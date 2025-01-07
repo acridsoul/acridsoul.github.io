@@ -2,8 +2,6 @@
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
 import SquareLines from "../components/square-lines.astro";
-import Chatbot from "@/components/chatbot.astro";
-import Cursor from "@/components/cursor.astro";
 const { title } = Astro.props;
 ---
 
@@ -43,11 +41,9 @@ const { title } = Astro.props;
   <body class="antialiased bg-white dark:bg-neutral-950">
     
     </body>
-    <Cursor />
     <SquareLines />
     <Header />
     <slot />
-    <!-- <Chatbot /> -->
     <Footer />
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
   </body>

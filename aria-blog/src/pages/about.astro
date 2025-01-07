@@ -1,8 +1,7 @@
 ---
-import experiences from "../collections/experiences.json";
-import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
+import Timeline from "../components/timeline.astro"
 ---
 
 <Layout title="About Me">
@@ -11,8 +10,7 @@ import Layout from "../layouts/main.astro";
       title="About Me"
       description="Hi 👋 I'm a Cybersecurity Nerd from Nairobi, Kenya. I like to stay updated with security trends. I'd say I'm quite the sysadmin too."
     />
-
-    <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+  <Timeline />
 
     <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
     <p

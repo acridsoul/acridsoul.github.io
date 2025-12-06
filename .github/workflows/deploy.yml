@@ -25,9 +25,9 @@ jobs:
       - name: Install, build, and upload site
         uses: withastro/action@v2
         with:
-          # Path to your Astro project. '.' is the repo root.
           path: .
           node-version: 20
+          package-manager: npm 
 
   deploy:
     needs: build

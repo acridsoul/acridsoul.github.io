@@ -6,22 +6,22 @@ import IconDiscord from "../icons/discord.astro";
 export const SOCIALS = [
   {
     name: "Twitter",
-    url: "https://x.com/AndrewKuktenko",
+    url: "https://x.com/dumpyoursiqwel",
     icon: IconTwitter,
   },
   {
     name: "Github",
-    url: "https://github.com/AndrewKuktenko",
+    url: "https://github.com/acridsoul",
     icon: IconGithub,
   },
   {
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/andrew-kuktenko/",
+    url: "https://www.linkedin.com/in/austin-githinji-3a3470265/",
     icon: IconLinkedin,
   },
   {
     name: "Discord",
-    url: "https://discord.com/users/342345918533599236",
+    url: "#",
     icon: IconDiscord,
   },
 ];
